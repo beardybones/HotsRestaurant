@@ -15,10 +15,10 @@ app.use(express.json());
 
 var reservations = [
   {
-    name:
-    phone:
-    email:
-    uniqueID:
+    // name:
+    // phone:
+    // email:
+    // uniqueID:
 
 }
 ];
