@@ -15,17 +15,45 @@ app.use(express.json());
 
 var reservations = [
   {
-    // name:
-    // phone:
-    // email:
-    // uniqueID:
+    name: 'joe blow',
+    phone: '555-5555',
+    email: 'a;dkfja@al;dkfj',
+    uniqueID: '1'
+
+},{
+  name: 'joe blow',
+  phone: '555-5555',
+  email: 'a;dkfja@al;dkfj',
+  uniqueID: '2'
+
+},{
+  name: 'joe blow',
+  phone: '555-5555',
+  email: 'a;dkfja@al;dkfj',
+  uniqueID: '3'
+
+},{
+  name: 'joe blow',
+  phone: '555-5555',
+  email: 'a;dkfja@al;dkfj',
+  uniqueID: '4'
+
+},{
+  name: 'joe blow',
+  phone: '555-5555',
+  email: 'a;dkfja@al;dkfj',
+  uniqueID: '5'
 
 }
 ];
 var waitlist = [
   {
+    name: 'joe blow',
+    phone: '555-5555',
+    email: 'a;dkfja@al;dkfj',
+    uniqueID: '6'
+},
 
-}
 ];
 
   // Basic route that sends the user first to the AJAX Page
@@ -39,6 +67,16 @@ var waitlist = [
   app.get("/reserve", function(req, res) {
     res.sendFile(path.join(__dirname, "reserve.html"));
   });
+
+  app.get("/api/reservations", function(req, res) {
+    return res.json(reservations);
+  });
+
+  app.get("/api/waitlist", function(req, res) {
+    return res.json(waitlist);
+  });
+
+
 
   app.get("/api/:urlInput", function(req, res) {
     var chosen = req.params.urlInput;
