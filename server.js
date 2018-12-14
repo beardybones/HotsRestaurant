@@ -12,20 +12,19 @@ var PORT = process.env.PORT || 3000;
 // Sets up the Express app to handle data parsing
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
+app.use(express.static('public'));
 
 var reservations = [
-  {
-    name:
-    phone:
-    email:
-    uniqueID:
+  { 
+    name: "Cord",
+    phone: "911",
+    email: "cord@gmail.com",
+    uniqueID: "cord100"
 
 }
 ];
 var waitlist = [
-  {
 
-}
 ];
 
   // Basic route that sends the user first to the AJAX Page
@@ -72,20 +71,6 @@ var waitlist = [
   
     res.json(newReservation);
   });
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
 
   app.listen(PORT, function() {
     console.log("App listening on PORT " + PORT);
