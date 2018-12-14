@@ -3,4 +3,42 @@ background-image: url("bg.jpg");
 color:black;
 background-size:cover;
 background-blend-mode: multiply;
+display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+footer{
+    margin-top:32px;
+    height:80px;
+    width:100%;
+    position:relative;
+    bottom:0;
+}
+
+footer a{
+    color:white;
+    text-decoration: none;
+}
+
+footer a:hover{
+    color:#F44336;
+    text-decoration: none;
+
+}
+
+.btnMain{
+    background-color:#F44336;
+}
+
+.btnSecondary{
+    background-color:#2196F3;
+}
+
+.btnMain:hover{
+    background-color:#E57373;
+}
+
+.btnSecondary:hover{
+    background-color:#64B5F6;
 }
