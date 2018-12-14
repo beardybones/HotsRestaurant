@@ -15,11 +15,11 @@ app.use(express.json());
 app.use(express.static('public'));
 
 var reservations = [
-  { 
-    name: "Cord",
-    phone: "911",
-    email: "cord@gmail.com",
-    uniqueID: "cord100"
+  {
+    // name:
+    // phone:
+    // email:
+    // uniqueID:
 
 }
 ];
